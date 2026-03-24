@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default fallback */
+:root {
+  --bg: #ffffff;
+  --text: #333333;
+}
+
+/* 🌞 Light */
+html.light {
+  --bg: #ffffff;
+  --bg-surface: #f3f3f3;
+  --bg-elevated: #d9d9d9;
+  --border: #e6e6e6;
+
+  --text: #333333;
+  --text-h: #141414;
+  --text-muted: #757575;
+
+  --accent: #e50914;
+}
+
+/* 🌙 Dark */
+html.dark {
+  --bg: #141414;
+  --bg-surface: #1f1f1f;
+  --bg-elevated: #333333;
+  --border: #2a2a2a;
+
+  --text: #e5e5e5;
+  --text-h: #ffffff;
+  --text-muted: #999999;
+
+  --accent: #e50914;
+}
+
+/* Smooth transition (Netflix feel) */
+html {
+  transition: background 0.3s ease, color 0.3s ease;
+}
